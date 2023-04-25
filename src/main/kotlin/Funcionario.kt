@@ -1,6 +1,6 @@
 import kotlin.time.times
 
-class Funcionario(
+open class Funcionario(
     val nome: String,
     val cpf: String,
     val salario: Double,
