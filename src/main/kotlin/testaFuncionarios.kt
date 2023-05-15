@@ -1,4 +1,4 @@
-private fun testaFuncionarios() {
+ fun testaFuncionarios() {
     val alex = Funcionario(
         nome = "alex",
         cpf = "111.111.111-11",
