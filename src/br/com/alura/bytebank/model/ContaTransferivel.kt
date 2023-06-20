@@ -1,3 +1,5 @@
+package br.com.alura.bytebank.model
+
 abstract class ContaTransferivel(
     titular : String,
     numero: Int

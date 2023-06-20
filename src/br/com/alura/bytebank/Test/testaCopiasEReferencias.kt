@@ -1,3 +1,8 @@
+package br.com.alura.bytebank.test
+
+import br.com.alura.bytebank.model.ContaCorrente
+import br.com.alura.bytebank.model.ContaPoupanca
+
 fun testaCopiasEReferencias() {
     val numeroX = 10
     var numeroY = numeroX
@@ -6,9 +11,9 @@ fun testaCopiasEReferencias() {
     println("numeroX $numeroX")
     println("numeroY $numeroY")
 
-    val contaJoao = ContaPoupanca("João", 1002)
+    val contaJoao = ContaCorrente("João", 1002)
     contaJoao.titular = "João"
-    var contaMaria = ContaCorrente("Maria", 1003)
+    var contaMaria = ContaPoupanca("Maria", 1003)
     contaMaria.titular = "Maria"
     contaJoao.titular = "João"
 
