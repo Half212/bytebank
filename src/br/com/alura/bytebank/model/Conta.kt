@@ -1,7 +1,7 @@
 package br.com.alura.bytebank.model
 
 abstract class Conta(
-    var titular: String,
+    var titular: Cliente,
     val numero: Int
 ) {
     var saldo = 0.0
@@ -15,7 +15,7 @@ abstract class Conta(
 
     abstract fun saca(valor: Double)
 
-    fun transfere(valor: Double, destino: Conta): Boolean {
+    open fun transfere(valor: Double, destino: Conta): Boolean {
         if (saldo >= valor) {
             saldo -= valor
             destino.deposita(valor)
