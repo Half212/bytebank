@@ -1,7 +1,7 @@
 package br.com.alura.bytebank.model
 
 class Cliente(
-    val nome: String,
+    var nome: String,
     val cpf: String,
     var endereco: Endereco = Endereco(),
     private val senha: Int
